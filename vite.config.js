@@ -5,17 +5,17 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
 
-  // 👇 Caminho base — Render usa '/' e GitHub Pages usa '/one-sheet/'
-  base: process.env.RENDER ? '/' : '/one-sheet/',
+  // 👇 Caminho base — Render usa './' e GitHub Pages usa '/one-sheet/'
+  base: './',
 
   build: {
     outDir: 'dist',
-    assetsDir: '.', // mantém os assets junto ao index.html
+    assetsDir: '.', // mantém os assets junto do index.html
     emptyOutDir: true,
   },
 
   server: {
-    host: true, // permite acesso pelo IP local (ex: 192.168.x.x)
+    host: true, // permite acesso via IP local (ex: 192.168.x.x)
     port: 5173,
     cors: {
       origin: '*', // libera para testes locais e o domínio do Owlbear
