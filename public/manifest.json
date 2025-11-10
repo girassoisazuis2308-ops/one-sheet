@@ -1,0 +1,15 @@
+{
+  "name": "ONE Character Sheet",
+  "description": "Ficha do sistema ONE — com vida, mana, atributos e inventário.",
+  "version": "1.0.0",
+  "author": "Bonykou",
+  "icon": "icon.png",
+  "panels": [
+    {
+      "id": "one-sheet",
+      "title": "Ficha ONE",
+      "url": "index.html",
+      "width": 400
+    }
+  ]
+}
